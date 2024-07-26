@@ -193,10 +193,17 @@ form button:hover {
 
 #references {
     display: flex;
-    flex-wrap: wrap; /* Pozwala na zawijanie obrazów w nowy wiersz, jeśli jest to potrzebne */
-    justify-content: center; /* Wyśrodkowuje obrazy w poziomie */
-    gap: 20px; /* Dodaje przestrzeń między obrazami */
+    flex-direction: column; /* Ustawia układ w kolumnie dla sekcji */
+    align-items: center; /* Wyśrodkowuje wszystkie elementy w poziomie */
+    gap: 20px; /* Dodaje przestrzeń między nagłówkiem a zdjęciami */
     padding: 20px;
+}
+
+.reference-item-container {
+    display: flex; /* Ustawia zdjęcia obok siebie */
+    flex-wrap: wrap; /* Pozwala na zawijanie zdjęć w nowy wiersz, jeśli jest to potrzebne */
+    justify-content: center; /* Wyśrodkowuje zdjęcia w poziomie */
+    gap: 20px; /* Dodaje przestrzeń między zdjęciami */
 }
 
 .reference-item {
@@ -210,5 +217,5 @@ form button:hover {
     height: auto; /* Automatycznie dostosowuje wysokość, aby zachować proporcje */
     max-width: 400px; /* Ogranicza maksymalną szerokość do 400px */
     display: block;
-    margin: 20px;
+    margin: 0 auto; /* Wyśrodkowuje obraz w poziomie w ramach rodzica */
 }
