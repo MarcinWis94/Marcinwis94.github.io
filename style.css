@@ -192,8 +192,8 @@ form button:hover {
 }
 
 .reference-item img {
-    max-width: 100px;
-    height: 100px;
+    width: 250px; /* Ustaw szerokość na 250px */
+    height: auto; /* Ustaw wysokość automatycznie, aby zachować proporcje */
     display: block;
     margin: 0 auto;
 }
