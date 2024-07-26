@@ -192,8 +192,8 @@ form button:hover {
 }
 
 .reference-item img {
-    max-width: 200p;
-    height: 300p;
+    max-width: 100p;
+    height: 100p;
     display: block;
     margin: 0 auto;
 }
