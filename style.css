@@ -191,9 +191,24 @@ form button:hover {
     margin-right: 8px;
 }
 
-.reference-item img {
-    width: 500px; /* Ustaw szerokość na 250px */
-    height: auto; /* Ustaw wysokość automatycznie, aby zachować proporcje */
+#references {
     display: flex;
+    flex-wrap: wrap; /* Pozwala na zawijanie obrazów w nowy wiersz, jeśli jest to potrzebne */
+    justify-content: center; /* Wyśrodkowuje obrazy w poziomie */
+    gap: 20px; /* Dodaje przestrzeń między obrazami */
+    padding: 20px;
+}
+
+.reference-item {
+    flex: 1 1 calc(50% - 20px); /* Ustawia szerokość każdego elementu na 50% z uwzględnieniem marginesów */
+    box-sizing: border-box; /* Uwzględnia padding i border w szerokości i wysokości */
+    text-align: center;
+}
+
+.reference-item img {
+    width: 100%; /* Ustawia szerokość obrazu na 100% szerokości rodzica */
+    height: auto; /* Automatycznie dostosowuje wysokość, aby zachować proporcje */
+    max-width: 400px; /* Ogranicza maksymalną szerokość do 400px */
+    display: block;
     margin: 0 auto;
 }
