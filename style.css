@@ -210,5 +210,5 @@ form button:hover {
     height: auto; /* Automatycznie dostosowuje wysokość, aby zachować proporcje */
     max-width: 400px; /* Ogranicza maksymalną szerokość do 400px */
     display: block;
-    margin: 0 auto;
+    margin: 20px;
 }
