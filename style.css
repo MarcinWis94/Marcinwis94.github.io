@@ -190,3 +190,10 @@ form button:hover {
     height: 24px;
     margin-right: 8px;
 }
+
+.reference-item img {
+    max-width: 200p;
+    height: 300p;
+    display: block;
+    margin: 0 auto;
+}
