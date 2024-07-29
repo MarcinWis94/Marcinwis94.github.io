@@ -11,7 +11,7 @@ body {
 
 header {
     text-align: center;
-    background-color: 	#696969;
+    background-color: #DCDCDC;
     color: #fff;
     padding: 30px 0;
     border-bottom: 4px solid #333;
@@ -218,4 +218,37 @@ form button:hover {
     max-width: 400px; /* Ogranicza maksymalną szerokość do 400px */
     display: block;
     margin: 0 auto; /* Wyśrodkowuje obraz w poziomie w ramach rodzica */
+}
+
+.realizations-content {
+    display: flex; /* Ustawia elementy obok siebie */
+    flex-wrap: wrap; /* Pozwala na zawijanie elementów w nowy wiersz, jeśli jest to potrzebne */
+    gap: 20px; /* Dodaje przestrzeń między elementami */
+}
+
+.realizations-text {
+    flex: 1 1 45%; /* Ustawia szerokość tekstu na 45% */
+    min-width: 300px; /* Minimalna szerokość dla tekstu */
+}
+
+.realizations-images {
+    flex: 1 1 50%; /* Ustawia szerokość sekcji obrazów na 50% */
+    min-width: 300px; /* Minimalna szerokość dla obrazów */
+}
+
+.realization-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Dodaje przestrzeń między obrazami */
+}
+
+.realization-item {
+    flex: 1 1 calc(33% - 10px); /* Ustawia szerokość obrazów na 33% z uwzględnieniem marginesów */
+    box-sizing: border-box; /* Uwzględnia padding i border w szerokości i wysokości */
+}
+
+.realization-item img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
