@@ -233,13 +233,14 @@ form button:hover {
 
 .realizations-images {
     flex: 1 1 50%; /* Ustawia szerokość sekcji obrazów na 50% */
-    max-width: 200px; /* Minimalna szerokość dla obrazów */
+    max-width: 150px; /* Minimalna szerokość dla obrazów */
 }
 
 .realization-item-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px; /* Dodaje przestrzeń między obrazami */
+    max-width: 500px
 }
 
 .realization-item {
